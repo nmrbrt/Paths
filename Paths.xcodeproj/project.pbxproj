@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		80CAF3BA7E4EC7A48D9CACBF /* Pods_Paths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612BFB15ADE97DC149B83EC0 /* Pods_Paths.framework */; };
 		A034AC8E20DEC09B006D84D9 /* VideoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */; };
+		A034AC9120DEFD9A006D84D9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AC9020DEFD9A006D84D9 /* DetailsViewController.swift */; };
+		A034AC9420DEFE08006D84D9 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AC9220DEFE08006D84D9 /* MapTableViewCell.swift */; };
+		A034AC9520DEFE08006D84D9 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A034AC9320DEFE08006D84D9 /* MapTableViewCell.xib */; };
+		A034AC9720DF0182006D84D9 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AC9620DF0182006D84D9 /* LocationAnnotation.swift */; };
 		A057ABD620DE6717002235D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABD520DE6717002235D5 /* AppDelegate.swift */; };
 		A057ABD820DE6717002235D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABD720DE6717002235D5 /* ViewController.swift */; };
 		A057ABDB20DE6717002235D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A057ABD920DE6717002235D5 /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		612BFB15ADE97DC149B83EC0 /* Pods_Paths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellModel.swift; sourceTree = "<group>"; };
+		A034AC9020DEFD9A006D84D9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A034AC9220DEFE08006D84D9 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		A034AC9320DEFE08006D84D9 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
+		A034AC9620DF0182006D84D9 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
 		A0572D3EABAA968B0FC0BAE3 /* Pods-Paths.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paths.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paths/Pods-Paths.debug.xcconfig"; sourceTree = "<group>"; };
 		A057ABD220DE6717002235D5 /* Paths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paths.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A057ABD520DE6717002235D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +109,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A034AC8F20DEFD82006D84D9 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				A034AC9020DEFD9A006D84D9 /* DetailsViewController.swift */,
+				A034AC9620DF0182006D84D9 /* LocationAnnotation.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
 		A057ABC920DE6717002235D5 = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +143,13 @@
 		A057ABD420DE6717002235D5 /* Paths */ = {
 			isa = PBXGroup;
 			children = (
+				A057ABD920DE6717002235D5 /* Main.storyboard */,
+				A057ABD720DE6717002235D5 /* ViewController.swift */,
+				A034AC8F20DEFD82006D84D9 /* DetailsView */,
 				A0B6889C20DEA9A800E72C37 /* Extensions */,
 				A0F8648E20DEA62B00AE29DE /* Cells */,
 				A0F8648B20DEA5FD00AE29DE /* ViewModelController */,
 				A057ABD520DE6717002235D5 /* AppDelegate.swift */,
-				A057ABD720DE6717002235D5 /* ViewController.swift */,
-				A057ABD920DE6717002235D5 /* Main.storyboard */,
 				A057ABDF20DE6718002235D5 /* Assets.xcassets */,
 				A057ABE120DE6718002235D5 /* LaunchScreen.storyboard */,
 				A057ABE420DE6718002235D5 /* Info.plist */,
@@ -181,6 +199,8 @@
 				A0F8648F20DEA69600AE29DE /* VideoTableViewCell.swift */,
 				A0F8649020DEA69600AE29DE /* VideoTableViewCell.xib */,
 				A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */,
+				A034AC9220DEFE08006D84D9 /* MapTableViewCell.swift */,
+				A034AC9320DEFE08006D84D9 /* MapTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -308,6 +328,7 @@
 				A057ABE320DE6718002235D5 /* LaunchScreen.storyboard in Resources */,
 				A0F8649220DEA69600AE29DE /* VideoTableViewCell.xib in Resources */,
 				A057ABE020DE6718002235D5 /* Assets.xcassets in Resources */,
+				A034AC9520DEFE08006D84D9 /* MapTableViewCell.xib in Resources */,
 				A057ABDB20DE6717002235D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,11 +397,14 @@
 			files = (
 				A0F8648D20DEA61C00AE29DE /* ViewModelController.swift in Sources */,
 				A0B6889B20DEA9A400E72C37 /* UIViewExtensions.swift in Sources */,
+				A034AC9120DEFD9A006D84D9 /* DetailsViewController.swift in Sources */,
 				A064066520DE774C0032546F /* AgoraioController.swift in Sources */,
 				A057ABDE20DE6717002235D5 /* Paths.xcdatamodeld in Sources */,
 				A057ABD820DE6717002235D5 /* ViewController.swift in Sources */,
+				A034AC9420DEFE08006D84D9 /* MapTableViewCell.swift in Sources */,
 				A057ABD620DE6717002235D5 /* AppDelegate.swift in Sources */,
 				A0F8649120DEA69600AE29DE /* VideoTableViewCell.swift in Sources */,
+				A034AC9720DF0182006D84D9 /* LocationAnnotation.swift in Sources */,
 				A034AC8E20DEC09B006D84D9 /* VideoCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

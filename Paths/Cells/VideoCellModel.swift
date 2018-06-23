@@ -8,11 +8,16 @@
 
 import Foundation
 import UIKit
+import AgoraRtcEngineKit
 
 class VideoCellModel{
     
     var indexPath: IndexPath?
-    var videoCanvas: UIView?
+    var agoraCanvas: AgoraRtcVideoCanvas?
     
+    var location: String?
     
+    init(withCanvas canvas: AgoraRtcVideoCanvas) {
+        self.agoraCanvas = canvas
+    }
 }
