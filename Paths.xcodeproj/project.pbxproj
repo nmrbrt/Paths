@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80CAF3BA7E4EC7A48D9CACBF /* Pods_Paths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612BFB15ADE97DC149B83EC0 /* Pods_Paths.framework */; };
+		A034AC8E20DEC09B006D84D9 /* VideoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */; };
 		A057ABD620DE6717002235D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABD520DE6717002235D5 /* AppDelegate.swift */; };
 		A057ABD820DE6717002235D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABD720DE6717002235D5 /* ViewController.swift */; };
 		A057ABDB20DE6717002235D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A057ABD920DE6717002235D5 /* Main.storyboard */; };
@@ -15,6 +17,11 @@
 		A057ABE320DE6718002235D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A057ABE120DE6718002235D5 /* LaunchScreen.storyboard */; };
 		A057ABEE20DE6718002235D5 /* PathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABED20DE6718002235D5 /* PathsTests.swift */; };
 		A057ABF920DE6718002235D5 /* PathsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABF820DE6718002235D5 /* PathsUITests.swift */; };
+		A064066520DE774C0032546F /* AgoraioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064066420DE774C0032546F /* AgoraioController.swift */; };
+		A0B6889B20DEA9A400E72C37 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6889A20DEA9A400E72C37 /* UIViewExtensions.swift */; };
+		A0F8648D20DEA61C00AE29DE /* ViewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8648C20DEA61C00AE29DE /* ViewModelController.swift */; };
+		A0F8649120DEA69600AE29DE /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8648F20DEA69600AE29DE /* VideoTableViewCell.swift */; };
+		A0F8649220DEA69600AE29DE /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F8649020DEA69600AE29DE /* VideoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		612BFB15ADE97DC149B83EC0 /* Pods_Paths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellModel.swift; sourceTree = "<group>"; };
+		A0572D3EABAA968B0FC0BAE3 /* Pods-Paths.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paths.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paths/Pods-Paths.debug.xcconfig"; sourceTree = "<group>"; };
 		A057ABD220DE6717002235D5 /* Paths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paths.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A057ABD520DE6717002235D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A057ABD720DE6717002235D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,12 @@
 		A057ABF420DE6718002235D5 /* PathsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A057ABF820DE6718002235D5 /* PathsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsUITests.swift; sourceTree = "<group>"; };
 		A057ABFA20DE6718002235D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A064066420DE774C0032546F /* AgoraioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraioController.swift; sourceTree = "<group>"; };
+		A0B6889A20DEA9A400E72C37 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A0F8648C20DEA61C00AE29DE /* ViewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelController.swift; sourceTree = "<group>"; };
+		A0F8648F20DEA69600AE29DE /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		A0F8649020DEA69600AE29DE /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		C7DB5494C06137273E0EF51A /* Pods-Paths.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paths.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paths/Pods-Paths.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CAF3BA7E4EC7A48D9CACBF /* Pods_Paths.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8968A65EEF860A024476DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				612BFB15ADE97DC149B83EC0 /* Pods_Paths.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A057ABC920DE6717002235D5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				A057ABEC20DE6718002235D5 /* PathsTests */,
 				A057ABF720DE6718002235D5 /* PathsUITests */,
 				A057ABD320DE6717002235D5 /* Products */,
+				DD83CCFCA2E1026354FB63F1 /* Pods */,
+				1F8968A65EEF860A024476DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +126,9 @@
 		A057ABD420DE6717002235D5 /* Paths */ = {
 			isa = PBXGroup;
 			children = (
+				A0B6889C20DEA9A800E72C37 /* Extensions */,
+				A0F8648E20DEA62B00AE29DE /* Cells */,
+				A0F8648B20DEA5FD00AE29DE /* ViewModelController */,
 				A057ABD520DE6717002235D5 /* AppDelegate.swift */,
 				A057ABD720DE6717002235D5 /* ViewController.swift */,
 				A057ABD920DE6717002235D5 /* Main.storyboard */,
@@ -106,6 +136,7 @@
 				A057ABE120DE6718002235D5 /* LaunchScreen.storyboard */,
 				A057ABE420DE6718002235D5 /* Info.plist */,
 				A057ABDC20DE6717002235D5 /* Paths.xcdatamodeld */,
+				A064066420DE774C0032546F /* AgoraioController.swift */,
 			);
 			path = Paths;
 			sourceTree = "<group>";
@@ -128,6 +159,41 @@
 			path = PathsUITests;
 			sourceTree = "<group>";
 		};
+		A0B6889C20DEA9A800E72C37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6889A20DEA9A400E72C37 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0F8648B20DEA5FD00AE29DE /* ViewModelController */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8648C20DEA61C00AE29DE /* ViewModelController.swift */,
+			);
+			path = ViewModelController;
+			sourceTree = "<group>";
+		};
+		A0F8648E20DEA62B00AE29DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8648F20DEA69600AE29DE /* VideoTableViewCell.swift */,
+				A0F8649020DEA69600AE29DE /* VideoTableViewCell.xib */,
+				A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD83CCFCA2E1026354FB63F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0572D3EABAA968B0FC0BAE3 /* Pods-Paths.debug.xcconfig */,
+				C7DB5494C06137273E0EF51A /* Pods-Paths.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A057ABFD20DE6718002235D5 /* Build configuration list for PBXNativeTarget "Paths" */;
 			buildPhases = (
+				8D9E980D77083B2F32338855 /* [CP] Check Pods Manifest.lock */,
 				A057ABCE20DE6717002235D5 /* Sources */,
 				A057ABCF20DE6717002235D5 /* Frameworks */,
 				A057ABD020DE6717002235D5 /* Resources */,
+				57A15E076CA12E9BFB67D6BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +264,11 @@
 				TargetAttributes = {
 					A057ABD120DE6717002235D5 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A057ABE820DE6718002235D5 = {
 						CreatedOnToolsVersion = 9.3;
@@ -233,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A057ABE320DE6718002235D5 /* LaunchScreen.storyboard in Resources */,
+				A0F8649220DEA69600AE29DE /* VideoTableViewCell.xib in Resources */,
 				A057ABE020DE6718002235D5 /* Assets.xcassets in Resources */,
 				A057ABDB20DE6717002235D5 /* Main.storyboard in Resources */,
 			);
@@ -254,14 +328,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57A15E076CA12E9BFB67D6BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Paths/Pods-Paths-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paths/Pods-Paths-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9E980D77083B2F32338855 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Paths-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A057ABCE20DE6717002235D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F8648D20DEA61C00AE29DE /* ViewModelController.swift in Sources */,
+				A0B6889B20DEA9A400E72C37 /* UIViewExtensions.swift in Sources */,
+				A064066520DE774C0032546F /* AgoraioController.swift in Sources */,
 				A057ABDE20DE6717002235D5 /* Paths.xcdatamodeld in Sources */,
 				A057ABD820DE6717002235D5 /* ViewController.swift in Sources */,
 				A057ABD620DE6717002235D5 /* AppDelegate.swift in Sources */,
+				A0F8649120DEA69600AE29DE /* VideoTableViewCell.swift in Sources */,
+				A034AC8E20DEC09B006D84D9 /* VideoCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +552,14 @@
 		};
 		A057ABFE20DE6718002235D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0572D3EABAA968B0FC0BAE3 /* Pods-Paths.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7E5TZ7SDX4;
+				DEVELOPMENT_TEAM = 67HX68KKG2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Paths/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +573,14 @@
 		};
 		A057ABFF20DE6718002235D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DB5494C06137273E0EF51A /* Pods-Paths.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7E5TZ7SDX4;
+				DEVELOPMENT_TEAM = 67HX68KKG2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Paths/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
