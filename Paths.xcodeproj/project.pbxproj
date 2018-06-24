@@ -23,6 +23,9 @@
 		A057ABF920DE6718002235D5 /* PathsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057ABF820DE6718002235D5 /* PathsUITests.swift */; };
 		A064066520DE774C0032546F /* AgoraioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A064066420DE774C0032546F /* AgoraioController.swift */; };
 		A0B6889B20DEA9A400E72C37 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6889A20DEA9A400E72C37 /* UIViewExtensions.swift */; };
+		A0D22CF420DF96D400FD4DA8 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D22CF220DF96D400FD4DA8 /* ButtonTableViewCell.swift */; };
+		A0D22CF520DF96D400FD4DA8 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D22CF320DF96D400FD4DA8 /* ButtonTableViewCell.xib */; };
+		A0D22CF820DFA22E00FD4DA8 /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D22CF720DFA22E00FD4DA8 /* DetailVideoViewController.swift */; };
 		A0F8648D20DEA61C00AE29DE /* ViewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8648C20DEA61C00AE29DE /* ViewModelController.swift */; };
 		A0F8649120DEA69600AE29DE /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8648F20DEA69600AE29DE /* VideoTableViewCell.swift */; };
 		A0F8649220DEA69600AE29DE /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F8649020DEA69600AE29DE /* VideoTableViewCell.xib */; };
@@ -69,6 +72,9 @@
 		A057ABFA20DE6718002235D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A064066420DE774C0032546F /* AgoraioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraioController.swift; sourceTree = "<group>"; };
 		A0B6889A20DEA9A400E72C37 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A0D22CF220DF96D400FD4DA8 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		A0D22CF320DF96D400FD4DA8 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		A0D22CF720DFA22E00FD4DA8 /* DetailVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		A0F8648C20DEA61C00AE29DE /* ViewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelController.swift; sourceTree = "<group>"; };
 		A0F8648F20DEA69600AE29DE /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		A0F8649020DEA69600AE29DE /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 		A034AC8F20DEFD82006D84D9 /* DetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				A0D22CF620DFA21400FD4DA8 /* DetailVideo */,
 				A034AC9020DEFD9A006D84D9 /* DetailsViewController.swift */,
 				A034AC9620DF0182006D84D9 /* LocationAnnotation.swift */,
 			);
@@ -145,6 +152,7 @@
 			children = (
 				A057ABD920DE6717002235D5 /* Main.storyboard */,
 				A057ABD720DE6717002235D5 /* ViewController.swift */,
+				A064066420DE774C0032546F /* AgoraioController.swift */,
 				A034AC8F20DEFD82006D84D9 /* DetailsView */,
 				A0B6889C20DEA9A800E72C37 /* Extensions */,
 				A0F8648E20DEA62B00AE29DE /* Cells */,
@@ -154,7 +162,6 @@
 				A057ABE120DE6718002235D5 /* LaunchScreen.storyboard */,
 				A057ABE420DE6718002235D5 /* Info.plist */,
 				A057ABDC20DE6717002235D5 /* Paths.xcdatamodeld */,
-				A064066420DE774C0032546F /* AgoraioController.swift */,
 			);
 			path = Paths;
 			sourceTree = "<group>";
@@ -185,6 +192,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A0D22CF620DFA21400FD4DA8 /* DetailVideo */ = {
+			isa = PBXGroup;
+			children = (
+				A0D22CF720DFA22E00FD4DA8 /* DetailVideoViewController.swift */,
+			);
+			path = DetailVideo;
+			sourceTree = "<group>";
+		};
 		A0F8648B20DEA5FD00AE29DE /* ViewModelController */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +216,8 @@
 				A034AC8D20DEC09B006D84D9 /* VideoCellModel.swift */,
 				A034AC9220DEFE08006D84D9 /* MapTableViewCell.swift */,
 				A034AC9320DEFE08006D84D9 /* MapTableViewCell.xib */,
+				A0D22CF220DF96D400FD4DA8 /* ButtonTableViewCell.swift */,
+				A0D22CF320DF96D400FD4DA8 /* ButtonTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -326,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A057ABE320DE6718002235D5 /* LaunchScreen.storyboard in Resources */,
+				A0D22CF520DF96D400FD4DA8 /* ButtonTableViewCell.xib in Resources */,
 				A0F8649220DEA69600AE29DE /* VideoTableViewCell.xib in Resources */,
 				A057ABE020DE6718002235D5 /* Assets.xcassets in Resources */,
 				A034AC9520DEFE08006D84D9 /* MapTableViewCell.xib in Resources */,
@@ -398,10 +416,12 @@
 				A0F8648D20DEA61C00AE29DE /* ViewModelController.swift in Sources */,
 				A0B6889B20DEA9A400E72C37 /* UIViewExtensions.swift in Sources */,
 				A034AC9120DEFD9A006D84D9 /* DetailsViewController.swift in Sources */,
+				A0D22CF420DF96D400FD4DA8 /* ButtonTableViewCell.swift in Sources */,
 				A064066520DE774C0032546F /* AgoraioController.swift in Sources */,
 				A057ABDE20DE6717002235D5 /* Paths.xcdatamodeld in Sources */,
 				A057ABD820DE6717002235D5 /* ViewController.swift in Sources */,
 				A034AC9420DEFE08006D84D9 /* MapTableViewCell.swift in Sources */,
+				A0D22CF820DFA22E00FD4DA8 /* DetailVideoViewController.swift in Sources */,
 				A057ABD620DE6717002235D5 /* AppDelegate.swift in Sources */,
 				A0F8649120DEA69600AE29DE /* VideoTableViewCell.swift in Sources */,
 				A034AC9720DF0182006D84D9 /* LocationAnnotation.swift in Sources */,

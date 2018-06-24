@@ -21,7 +21,7 @@ class AgoraioController:NSObject, AgoraRtcEngineDelegate{
         
         self.viewController = viewController
         
-        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "11a72e7053bb428981dbca501575c10b", delegate: self)
+        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "", delegate: self)
     }
     
     
@@ -55,11 +55,6 @@ class AgoraioController:NSObject, AgoraRtcEngineDelegate{
         self.viewController!.insertVideoCell(atIndexPath: IndexPath(row: self.viewController!.remoteVideoCells.count - 1, section: 1))
         
     }
-    
-    
-    
-    
-    
     
     
     func rtcEngineMediaEngineDidLoaded(_ engine: AgoraRtcEngineKit) {

@@ -13,6 +13,7 @@ import AgoraRtcEngineKit
 enum CellIdentifiers: String {
     case video = "VideoTableViewCell"
     case map = "MapTableViewCell"
+    case button = "ButtonTableViewCell"
 }
 
 class ViewController: UIViewController {
@@ -52,9 +53,19 @@ class ViewController: UIViewController {
     
     func appenAnnotations(){
         
-        self.locations.append(LocationAnnotation(id: "001", title: "Marios", subtitle: "Cool as Sub-Zero", lat: 19.408872962676035, long: -155.32554722663576))
+        self.locations.append(LocationAnnotation(id: "001", title: "Marios", subtitle: "Cool as Sub-Zero", lat: 19.549017200459357, long: -155.0870563959287))
         
-        self.locations.append(LocationAnnotation(id: "002", title: "Brett", subtitle: "Hot as Scorpion", lat: 19.3669338877264, long: -155.24718380805666))
+        self.locations.append(LocationAnnotation(id: "002", title: "Jon Snow", subtitle: "Hot as Scorpion", lat: 19.35118700532723, long: -155.11763954055175))
+        
+        self.locations.append(LocationAnnotation(id: "003", title: "Ygritte", subtitle: "Just got married", lat: 19.355721918020958, long: -155.18424415480956))
+        
+        
+//
+//        self.locations.append(LocationAnnotation(id: "003", title: "Brett", subtitle: "Just got married", lat: 19.455651226775256, long: -155.0137569879697))
+        
+        self.locations.append(LocationAnnotation(id: "003", title: "Sam", subtitle: "Just got married", lat: 19.49465465878744, long: -154.97478985540135))
+        
+        self.locations.append(LocationAnnotation(id: "003", title: "Gilly", subtitle: "Just got married", lat: 19.434446254452588, long: -154.95728039495214))
     }
     
     
@@ -168,20 +179,19 @@ extension ViewController: UITableViewDelegate{
         switch indexPath.section {
         case 1:
             
-            let selectedRemote = self.remoteVideoCells[indexPath.row]
+//            let selectedRemote = self.remoteVideoCells[indexPath.row]
             
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             
             if let detailsViewController = storyBoard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController{
                 
                 detailsViewController.annotations = self.locations
+                detailsViewController.agoraController = self.agoraioController
+                detailsViewController.videos.append(self.localVideos[0])
+                detailsViewController.videos.append(self.remoteVideoCells[indexPath.row])
                 
                 self.navigationController?.pushViewController(detailsViewController, animated: true)
             }
-            
-            
-            
-            
             
         default:
             break

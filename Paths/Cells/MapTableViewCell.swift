@@ -23,10 +23,10 @@ class MapTableViewCell: UITableViewCell {
     
     var initialLocation: CLLocation{
         
-        return CLLocation(latitude: 19.4068929, longitude: -155.2833786)//Hawaii
+        return CLLocation(latitude: 19.472645577495793, longitude: -155.07195019475682)//Hawaii
     }
     
-    let regionRadius: CLLocationDistance = 30000
+    let regionRadius: CLLocationDistance = 36000
     
     
     
