@@ -56,7 +56,7 @@ class VideoTableViewCell: UITableViewCell {
         }else{
             
             videoCanvas.view = self.videoView
-            videoCanvas.renderMode = .adaptive
+            videoCanvas.renderMode = .hidden
 
             self.agoraioController!.agoraKit.setupRemoteVideo(videoCanvas)
             
@@ -79,7 +79,7 @@ class VideoTableViewCell: UITableViewCell {
         }else{
         
             videoCanvas.view = self.videoView
-            videoCanvas.renderMode = .adaptive
+            videoCanvas.renderMode = .hidden
             
             self.agoraioController!.agoraKit.setupLocalVideo(videoCanvas)
             

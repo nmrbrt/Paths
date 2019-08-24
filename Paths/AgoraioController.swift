@@ -21,7 +21,7 @@ class AgoraioController:NSObject, AgoraRtcEngineDelegate{
         
         self.viewController = viewController
         
-        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "", delegate: self)
+        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "11a72e7053bb428981dbca501575c10b", delegate: self)
     }
     
     
@@ -30,7 +30,7 @@ class AgoraioController:NSObject, AgoraRtcEngineDelegate{
         
         agoraKit.enableVideo()
 
-        agoraKit.setVideoProfile(.portrait360P, swapWidthAndHeight: false)
+        agoraKit.setVideoProfile(.landscape360P, swapWidthAndHeight: false)
         
     }
     

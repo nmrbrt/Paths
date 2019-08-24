@@ -8,6 +8,7 @@
 
 import UIKit
 import AgoraRtcEngineKit
+import MapKit
 
 
 enum CellIdentifiers: String {
@@ -19,6 +20,9 @@ enum CellIdentifiers: String {
 class ViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapShadowView: UIView!
+    @IBOutlet weak var mapVContainerView: UIView!
     
     
     var agoraioController = AgoraioController()
@@ -45,8 +49,24 @@ class ViewController: UIViewController {
         
         self.joinChannel()
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+//        tap.delegate = self // This is not required
+        self.mapView.addGestureRecognizer(tap)
         
-//        self.mainTableView.reloadData()
+        self.mapShadowView.dropThinShadow()
+        self.mapVContainerView.makeSquareWithCorner(size: .large, borderWidth: 0.0)
+        
+    }
+    
+    
+    @objc func handleTap() {
+        // handling code
+        print("TAPPED")
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.mainTableView.reloadData()
     }
     
     

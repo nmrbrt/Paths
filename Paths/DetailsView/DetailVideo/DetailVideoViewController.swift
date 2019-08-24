@@ -27,7 +27,7 @@ class DetailVideoViewController: UIViewController {
             let videoCanvas = self.videos![0].agoraCanvas!
             
             videoCanvas.view = self.localVideoView
-            videoCanvas.renderMode = .adaptive
+            videoCanvas.renderMode = .hidden
             
             self.agoraController!.agoraKit.setupLocalVideo(videoCanvas)
             
@@ -36,11 +36,16 @@ class DetailVideoViewController: UIViewController {
             let remoteCanvas = self.videos![1].agoraCanvas!
             
             remoteCanvas.view = self.remoteVideoView
-            remoteCanvas.renderMode = .adaptive
+            remoteCanvas.renderMode = .hidden
             
             self.agoraController!.agoraKit.setupRemoteVideo(remoteCanvas)
             
         }
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
     }
 
 }
